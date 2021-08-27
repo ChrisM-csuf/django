@@ -1,0 +1,18 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+    {% load static %}
+    <link href="{% static 'main/css/home.css' %}" rel="stylesheet">
+    <link href="{% static 'main/css/navbar.css' %}" rel="stylesheet">
+
+    <h1 class="test">hello</h1>
+    {% for tut in tutorials %}
+        <div class="card">
+            <p>{{tut.tutorial_title}}</p>
+            <p>{{tut.tutorial_content}}</p>
+            <p>{{tut.tutorial_published}}</p>
+        </div>
+    {% endfor %}
+
+{% endblock %}

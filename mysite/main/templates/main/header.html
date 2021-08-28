@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+
+    {% block header %}
+    <link href="{% static 'main/css/navbar.css' %}" rel="stylesheet">
+
+    <head>
+        <div id-"navbar" class="nav-wrapper">
+            <a href="/" class="navigation-links">Home</a>
+            <a href="/" class="navigation-links">Link 1</a>
+            <a href="/ranches" class="navigation-links">Ranches</a>
+            <a href="/register" class="account-links"> Register</a>
+            <a href="/login" class="account-links">Login</a>
+            <a href="/game" class="navigation-links">Game</a>
+        </div>
+    </head>
+
+    {% endblock %}
+
+    
+    {% if messages %}
+        {% for message in messages %}
+            <script>
+        {% endfor%}
+    {% endif %}
+
+    <body>
+        {% block content %}
+        {% endblock %}
+    </body>
+
+</html>

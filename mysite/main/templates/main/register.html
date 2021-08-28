@@ -1,0 +1,30 @@
+{% extends 'main/header.html' %}
+{% load static %}
+{% block content %}
+<link href="{% static 'main/css/register.css' %}" rel="stylesheet">
+
+
+<body>
+        <form method="POST">
+            <h2> Create Your Account </h2>
+            {% csrf_token %}
+            <div class="field-list">
+                <label class="labels"> First Name </label>
+                <div id="first_name" class="reg-form">{{ form.first_name }} </div>
+                <label class="labels"> Last Name </label>
+                <div id="first_name" class="reg-form"> {{ form.last_name }} </div>
+                <label class="labels"> Email </label>
+                <div id="email" class="reg-form"> {{ form.email }} </div>
+                <label class="labels"> Username </label>
+                <div id="username" class="reg-form"> {{ form.username }} </div>
+                <label class="labels"> Password </label>
+                <div id="password" class="reg-form"> {{ form.password1 }} </div>
+                <label class="labels"> Repeat Password </label>
+                <div id="repeat-password" class="reg-form"> {{ form.password2 }} </div>
+            </div>
+         
+
+            <button class="submit-btn" type="submit"> Register </button>
+    </form>
+</body>
+{% endblock %}

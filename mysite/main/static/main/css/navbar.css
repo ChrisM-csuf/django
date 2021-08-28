@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+}
+
+.nav-wrapper {
+    background-color: rgb(61, 51, 51);
+    overflow: hidden;
+    margin: 0;
+}
+
+.nav-wrapper a.navlink-active{
+    background-color: rgb(219, 148, 16);
+    float: left;
+    color:white;
+    font-size: 17px;
+    padding: 14px 16px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.nav-wrapper a.account-links{
+    float:right;
+    color: #f2f2f2;
+    font-size: 17px;
+    padding: 14px 16px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+
+}
+.nav-wrapper a.navigation-links {
+    float:left;
+    color: #f2f2f2;
+    font-size: 17px;
+    padding: 14px 16px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+
+}
+
+.nav-wrapper a:hover{
+    background-color: #ddd;
+    border: none;
+    border-radius: 2px;
+    color: black;
+}
